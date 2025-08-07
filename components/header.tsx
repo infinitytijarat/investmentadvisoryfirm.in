@@ -52,33 +52,66 @@ export function Header() {
               <span className="sr-only">Toggle navigation menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="left" className="max-w-[80vw] sm:max-w-[300px]">
-            <nav className="grid gap-6 text-lg font-medium pt-6">
-              <a href="/" className="flex items-center gap-2 text-lg font-semibold" onClick={(e) => handleLinkClick(e, '/')}>
-                <Image src="/logo.jpg" alt="Investment Advisory Firm Logo" width={24} height={24} className="h-6 w-6 rounded-md" />
-                <span>Investment Advisory Firm</span>
+          <SheetContent side="left" className="max-w-[80vw] sm:max-w-[300px] p-0 border-r border-gray-200 dark:border-gray-800">
+            <div className="p-6 bg-gradient-to-b from-green-50 to-white dark:from-gray-900 dark:to-gray-950 border-b border-gray-100 dark:border-gray-800">
+              <a href="/" className="flex items-center gap-3 mb-8" onClick={(e) => handleLinkClick(e, '/')}>
+                <Image src="/logo.jpg" alt="Investment Advisory Firm Logo" width={40} height={40} className="h-10 w-10 rounded-md" />
+                <span className="text-lg font-semibold text-gray-900 dark:text-white">Investment Advisory Firm</span>
               </a>
+            </div>
+            <nav className="flex flex-col py-4">
               <SheetClose asChild>
-                <a href="/services" className="hover:text-green-500" onClick={(e) => handleLinkClick(e, '/services')}>
+                <a 
+                  href="/services" 
+                  className="flex items-center px-6 py-4 text-base hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors" 
+                  onClick={(e) => handleLinkClick(e, '/services')}
+                >
+                  <svg className="mr-3 h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
                   Services
                 </a>
               </SheetClose>
               <SheetClose asChild>
-                <a href="/packages" className="hover:text-green-500" onClick={(e) => handleLinkClick(e, '/packages')}>
+                <a 
+                  href="/packages" 
+                  className="flex items-center px-6 py-4 text-base hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors" 
+                  onClick={(e) => handleLinkClick(e, '/packages')}
+                >
+                  <svg className="mr-3 h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                  </svg>
                   Packages
                 </a>
               </SheetClose>
               <SheetClose asChild>
-                <a href="/about" className="hover:text-green-500" onClick={(e) => handleLinkClick(e, '/about')}>
+                <a 
+                  href="/about" 
+                  className="flex items-center px-6 py-4 text-base hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors" 
+                  onClick={(e) => handleLinkClick(e, '/about')}
+                >
+                  <svg className="mr-3 h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   About Us
                 </a>
               </SheetClose>
               <SheetClose asChild>
-                <a href="/contact" className="hover:text-green-500" onClick={(e) => handleLinkClick(e, '/contact')}>
+                <a 
+                  href="/contact" 
+                  className="flex items-center px-6 py-4 text-base hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors" 
+                  onClick={(e) => handleLinkClick(e, '/contact')}
+                >
+                  <svg className="mr-3 h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
                   Contact Us
                 </a>
               </SheetClose>
             </nav>
+            <div className="mt-auto p-6 border-t border-gray-100 dark:border-gray-800">
+              <p className="text-xs text-gray-500 dark:text-gray-400">© {new Date().getFullYear()} Investment Advisory Firm</p>
+            </div>
           </SheetContent>
         </Sheet>
       </div>

@@ -81,8 +81,12 @@ export default function LandingPage() {
                 Our organization was founded to provide unbiased technical analysis from qualified professionals to our clients. We help you navigate the stock market with confidence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white">See Packages</Button>
-                <Button size="lg" variant="secondary">Get Quote</Button>
+                <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white" asChild>
+                  <Link href="/packages">See Packages</Link>
+                </Button>
+                <Button size="lg" variant="secondary" asChild>
+                  <Link href="/contact">Get Quote</Link>
+                </Button>
               </div>
             </div>
           </div>
@@ -169,7 +173,9 @@ export default function LandingPage() {
               <p className="text-lg md:text-xl text-gray-200">
                 Our stock tips simplify share market trading. We have figured the maximum profit.
               </p>
-              <Button size="lg" variant="destructive">Join Us</Button>
+              <Button size="lg" variant="destructive" asChild>
+                <Link href="/contact">Join Us</Link>
+              </Button>
             </div>
           </div>
         </section>
