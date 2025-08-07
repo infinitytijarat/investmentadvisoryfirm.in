@@ -27,7 +27,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full h-16 flex items-center justify-center bg-white/80 dark:bg-gray-950/80 backdrop-blur-sm">
       <div className="container mx-auto px-2 sm:px-4 lg:px-6 flex items-center justify-between w-full">
         <a href="/" className="flex items-center justify-center" onClick={(e) => handleLinkClick(e, '/')}>
-          <Image src="/logo.svg" alt="Investment Advisory Firm Logo" width={32} height={32} className="h-8 w-8 flex-shrink-0" />
+          <Image src="/logo.jpg" alt="Investment Advisory Firm Logo" width={32} height={32} className="h-8 w-8 flex-shrink-0 rounded-md" />
           <span className="ml-2 text-lg font-semibold text-gray-900 dark:text-gray-50 hidden sm:inline">Investment Advisory Firm</span>
           <span className="ml-2 text-lg font-semibold text-gray-900 dark:text-gray-50 sm:hidden">IAF</span>
         </a>
@@ -55,7 +55,7 @@ export function Header() {
           <SheetContent side="left" className="max-w-[80vw] sm:max-w-[300px]">
             <nav className="grid gap-6 text-lg font-medium pt-6">
               <a href="/" className="flex items-center gap-2 text-lg font-semibold" onClick={(e) => handleLinkClick(e, '/')}>
-                <Image src="/logo.svg" alt="Investment Advisory Firm Logo" width={24} height={24} className="h-6 w-6" />
+                <Image src="/logo.jpg" alt="Investment Advisory Firm Logo" width={24} height={24} className="h-6 w-6 rounded-md" />
                 <span>Investment Advisory Firm</span>
               </a>
               <SheetClose asChild>

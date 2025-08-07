@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   title: 'Investment Advisory Firm',
   description: 'Professional investment advisory services',
   generator: 'v0.dev',
+  icons: {
+    icon: '/logo.jpg',
+    apple: '/logo.jpg',
+  },
 }
 
 export default function RootLayout({
