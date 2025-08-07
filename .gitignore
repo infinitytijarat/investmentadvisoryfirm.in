@@ -1,0 +1,46 @@
+# Node modules
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Production build output
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Env files
+.env*
+!.env.example
+
+# Typescript cache
+*.tsbuildinfo
+
+# Vscode settings
+.vscode/
+
+# Optional npm cache directory
+.npm/
+
+# Coverage directory
+coverage/
+
+# SASS cache
+.sass-cache/
+
+# Next.js build manifests
+.next/cache/
+
+# Optional lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
