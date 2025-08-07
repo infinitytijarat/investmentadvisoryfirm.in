@@ -38,7 +38,7 @@ body {
       </head>
       <body className="flex flex-col min-h-screen w-full overflow-x-hidden">
         <ScrollToTopWrapper>{children}</ScrollToTopWrapper>
-        <WhatsAppButton phoneNumber="+918828792729" />
+        <WhatsAppButton phoneNumber="8828792729" />
       </body>
     </html>
   )

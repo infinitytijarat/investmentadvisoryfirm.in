@@ -67,7 +67,7 @@ export default function ServicesPage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
                 <div className="text-sm font-semibold tracking-wide uppercase text-green-600 dark:text-green-400">Our Services</div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900 dark:text-gray-50">Services Of Trading Expect Option</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900 dark:text-gray-50">Services of Investment Advisory Firm</h2>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 sm:grid-cols-2 md:grid-cols-3">
